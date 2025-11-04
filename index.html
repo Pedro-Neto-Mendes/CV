@@ -3,73 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pedro Mendes — Academic CV</title>
-  <meta name="description" content="PhD student website and academic CV for Pedro Mendes (Quantum Communication)." />
+  <title>Pedro Neto Mendes — Academic CV</title>
+  <meta name="description" content="PhD student website and academic CV for Pedro Neto Mendes (Quantum Communication)." />
   <link rel="icon" href="data:," />
   <style>
     :root{
-      --bg:#0b0c0f; /* dark background */
-      --panel:#0f1116; /* cards */
-      --text:#e7e9ee; /* main text */
-      --muted:#a6adbb; /* secondary text */
-      --line:#1b1f2a; /* borders */
-      --brand:#3b82f6; /* blue */
-      --brand-weak:#2563eb;
+      --bg:#0b0c0f;
+      --panel:#0f1116;
+      --text:#e7e9ee;
+      --muted:#a6adbb;
+      --line:#1b1f2a;
+      --brand:#3b82f6;
       --chip:#111827;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{margin:0; background:#0b0c0f; color:var(--text); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica Neue,Arial}
     a{color:var(--text)}
-    .wrap{max-width:1000px; margin:auto; padding:0 16px}
-    header{position:sticky; top:0; backdrop-filter:saturate(140%) blur(6px); background:rgba(11,12,15,.7); border-bottom:1px solid var(--line); z-index:10}
-    header .top{display:flex; align-items:center; gap:12px; padding:14px 0}
-    .logo{width:36px; height:36px; border-radius:12px; background:linear-gradient(135deg,#6366f1,#06b6d4)}
-    .name{font-weight:700; font-size:14px}
+    .wrap{max-width:1000px;margin:auto;padding:0 16px}
+    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(6px);background:rgba(11,12,15,.7);border-bottom:1px solid var(--line);z-index:10}
+    header .top{display:flex;align-items:center;gap:12px;padding:14px 0}
+    .logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,#6366f1,#06b6d4)}
+    .name{font-weight:700;font-size:14px}
     .role{opacity:.7}
-    .bar{height:4px; background:var(--brand); margin-bottom:12px} /* blue separator */
-    nav{display:flex; gap:12px; flex-wrap:wrap; padding:18px 0 20px; margin-top:12px}
-    nav button{padding:14px 22px; min-height:44px; border-radius:999px; border:1px solid var(--line); background:var(--chip); color:var(--text); cursor:pointer; font-size:16px; line-height:1.1}
-    nav button.active{background:var(--brand); border-color:var(--brand); color:white}
+    .bar{height:4px;background:var(--brand);margin-bottom:12px} /* blue separator */
+    nav{display:flex;gap:12px;flex-wrap:wrap;padding:18px 0 20px;margin-top:12px}
+    nav button{padding:14px 22px;min-height:44px;border-radius:999px;border:1px solid var(--line);background:var(--chip);color:var(--text);cursor:pointer;font-size:16px;line-height:1.1}
+    nav button.active{background:var(--brand);border-color:var(--brand);color:white}
     main{padding:72px 0 48px}
-    .grid{display:grid; gap:24px}
+    .grid{display:grid;gap:24px}
     @media(min-width:880px){.grid{grid-template-columns:0.35fr 0.65fr}}
-    .card{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:18px}
-    .circle{width:150px; height:150px; border-radius:999px; overflow:hidden; border:4px solid #0b0c0f; box-shadow:0 4px 20px rgba(0,0,0,.35)}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+    .circle{width:150px;height:150px;border-radius:999px;overflow:hidden;border:4px solid var(--bg);box-shadow:0 4px 20px rgba(0,0,0,.35)}
     .muted{color:var(--muted)}
-    h1,h2,h3,h4{margin:0}
-    h2{font-size:22px; margin-bottom:12px}
-    h3{font-size:18px}
-    ul{margin:8px 0 0; padding-left:18px}
-    .list{display:grid; gap:12px}
-    .pill{display:inline-block; padding:4px 10px; border-radius:999px; border:1px solid var(--line); background:var(--chip); font-size:13px}
-    footer{border-top:1px solid var(--line); padding:26px 0; color:var(--muted); font-size:13px}
-    .links a{margin-right:10px; text-decoration:underline; text-underline-offset:3px}
-    .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
-    .timeline{position:relative; border-left:1px solid var(--line); padding-left:18px}
-    .timeline .dot{position:absolute; left:-6px; width:10px; height:10px; background:var(--brand); border-radius:999px; margin-top:6px}
-    details{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:10px 12px}
+    .list{display:grid;gap:12px}
+    .pill{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:var(--chip);font-size:13px}
+    footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:13px}
+    .links a{margin-right:10px;text-decoration:underline;text-underline-offset:3px}
+    .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .timeline{position:relative;border-left:1px solid var(--line);padding-left:18px}
+    .timeline .dot{position:absolute;left:-6px;width:10px;height:10px;background:var(--brand);border-radius:999px;margin-top:6px}
+    details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
     details summary{cursor:pointer}
     .hidden{display:none}
   </style>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Pedro Mendes",
-    "jobTitle":"PhD Candidate • Quantum Communication",
-    "email":"pedro.mendes@example.com",
-    "url":"https://github.com/Peterhead29",
-    "sameAs":["https://scholar.google.com","https://orcid.org/0000-0000-0000-0000","https://www.linkedin.com/in/"],
-    "address":{"@type":"PostalAddress","addressLocality":"Vigo, Spain · Lisbon, Portugal"}
-  }
-  </script>
 </head>
 <body>
   <header>
     <div class="wrap top">
       <div class="logo" aria-hidden="true"></div>
-      <div class="name">Pedro Mendes <span class="role">— PhD Candidate • Quantum Communication</span></div>
+      <div class="name">Pedro Neto Mendes <span class="role">— PhD Candidate • Quantum Communication</span></div>
       <div style="flex:1"></div>
       <button id="themeToggle" class="pill" aria-label="Toggle theme">Toggle theme</button>
     </div>
@@ -93,7 +76,7 @@
               <a href="https://scholar.google.com/citations?user=iCzz8L0AAAAJ&hl=pt-PT">Scholar</a>
               <a href="https://github.com/Peterhead29">GitHub</a>
               <a href="https://www.linkedin.com/in/pedro-neto-mendes/">LinkedIn</a>
-              <a href="./Pedro_Mendes_CV.pdf">Download CV</a>
+              <a href="./Pedro_Neto_Mendes_CV.pdf">Download CV</a>
             </div>
           </div>
         </aside>
@@ -103,30 +86,45 @@
             <p class="muted">I hold an integrated master’s degree in Engineering Physics from Instituto Superior Técnico (Lisbon, Portugal). I am currently a PhD student in the QuLab at Instituto de Telecomunicações (Lisbon, Portugal).</p>
             <p class="muted" style="margin-top:8px">My research focuses on developing practical quantum communication protocols. I am pursuing the experimental implementation of Quantum Keyless Private Communication (QKPC), pushing toward robust daytime field trials with a view to future satellite deployment.</p>
             <h3 style="margin-top:12px">Research interests</h3>
-            <div class="row" style="margin-top:6px; gap:8px">
+            <div class="row" style="margin-top:6px;gap:8px">
               <span class="pill">Quantum communication</span>
               <span class="pill">Quantum Secure Direct Communication (QSDC)</span>
-              <span class="pill">Free‑space optics</span>
+              <span class="pill">Free-space optics</span>
               <span class="pill">Quantum optics</span>
-              <span class="pill">Single‑photon systems</span>
+              <span class="pill">Single-photon systems</span>
             </div>
           </div>
         </section>
       </div>
     </section>
 
-    <!-- Education & Research -->
+    <!-- Education -->
     <section id="page-education" class="hidden">
       <div class="card">
-        <h2>Education & Research</h2>
+        <h2>Education</h2>
         <div class="timeline" style="margin-top:12px">
           <div class="dot" style="top:0"></div>
-          <div><strong>PhD in Physics (Quantum Communication)</strong> — IST & Instituto de Telecomunicações <span class="muted">(2023—present)</span>
-            <div class="muted">Private communication in daylight free‑space channels; QKPC/QSDC; PICs.</div>
+          <div>
+            <strong>PhD in Electrical and Computer Engineering</strong> — Universidade de Lisboa, Instituto Superior Técnico, Portugal
+            <span class="muted">(2023—2027 expected)</span>
+            <div class="muted"><em>Dissertation:</em> Entangling measurements to power quantum communication</div>
+            <div class="muted" style="margin-top:4px">
+              <em>Supervisors:</em>
+              <a href="https://scholar.google.com/citations?user=PnzCrFIAAAAJ&hl=en">Emmanuel Zambrini Cruzeiro</a>,
+              <a href="https://scholar.google.pt/citations?user=absctuEAAAAJ&hl=pt-PT">Paulo André</a>
+            </div>
           </div>
-          <div class="dot" style="top:84px"></div>
-          <div style="margin-top:16px"><strong>MSc in Physics Engineering</strong> — Técnico Lisboa <span class="muted">(—)</span>
-            <div class="muted">Thesis on integrated photonic systems for quantum communication.</div>
+
+          <div class="dot" style="top:150px"></div>
+          <div style="margin-top:28px">
+            <strong>Integrated Master in Technological Physics Engineering</strong> — Universidade de Lisboa, Instituto Superior Técnico, Portugal
+            <span class="muted">(2021)</span>
+            <div class="muted"><em>Dissertation:</em> Design of a passive photonic integrated circuit for QKD</div>
+            <div class="muted" style="margin-top:4px">
+              <em>Supervisors:</em>
+              <a href="https://scholar.google.com/citations?user=0s3Oy7AAAAAJ&hl=pt-PT">Manfred Niehus</a>,
+              <a href="https://scholar.google.com/citations?user=hvzGZiwAAAAJ&hl=en">João Seixas</a>
+            </div>
           </div>
         </div>
       </div>
@@ -136,19 +134,56 @@
     <section id="page-teaching" class="hidden">
       <div class="card">
         <h2>Teaching & Work Experience</h2>
+
+        <h3>Work Experience</h3>
         <div class="list" style="margin-top:12px">
           <div class="card">
-            <div><strong>Lecturer</strong> — Universidade Lusófona <span class="muted">(2024—present)</span></div>
+            <div><strong>Research Fellow</strong> — Instituto de Telecomunicações, Lisbon, Portugal <span class="muted">(Mar 2024 — Present; Jan 2021 — Dec 2021)</span></div>
+          </div>
+          <div class="card">
+            <div><strong>Analyst</strong> — Capgemini Engineering, France <span class="muted">(Sep 2022 — Dec 2022)</span></div>
+          </div>
+          <div class="card">
+            <div><strong>Higher Technician</strong> — Instituto de Telecomunicações, Lisbon, Portugal <span class="muted">(Jan 2022 — Mar 2022)</span></div>
+          </div>
+          <div class="card">
+            <div><strong>Assistant Professor</strong> — Universidade Lusófona <span class="muted">(2024/2025 — 2º semestre)</span></div>
             <ul>
-              <li>Intervenção por Aparatologia course</li>
-              <li>Laser–tissue interaction lab modules</li>
+              <li><a href="https://www.ulusofona.pt/lisboa/licenciaturas/cuidados-de-beleza-e-bem-estar/ULHT6580-24326">Intervenção por Aparatologia</a> — Cuidados de Beleza e Bem-Estar</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 style="margin-top:32px">Teaching</h3>
+        <div class="list" style="margin-top:12px">
+          <div class="card">
+            <div><strong>Teaching Assistant</strong> — Instituto Superior Técnico <span class="muted">(2022—2024)</span></div>
+            <ul>
+              <li><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/RC/2023-2024/1-semestre">Redes de Computadores (RC)</a> — LEIC-A</li>
+              <li><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/SCT/2023-2024/1-semestre">Sistemas de Controlo de Tráfego (SCT)</a> — MEAer21</li>
+              <li><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/TIComu/2023-2024/1-semestre">Teoria da Informação e Comunicação (TIComu)</a> — MECD, MEEC21</li>
+              <li><a href="https://fenix.tecnico.ulisboa.pt/disciplinas/RCI/2022-2023/2-semestre">Redes de Computadores e Internet (RCI)</a> — LEEC21 Min-TI</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 style="margin-top:32px">Supervision</h3>
+        <div class="list" style="margin-top:12px">
+          <div class="card">
+            <div><strong>Master’s Thesis Supervision</strong></div>
+            <ul>
+              <li><strong>Duarte Lourenço Sumares Velosa Barreto</strong> — <em>Space-based high-speed quantum communication</em> (Ongoing)</li>
+              <li><strong>Ana Filipa Caroço Castela Rio</strong> — <em>Go-Around detection at LPPT based on deep learning models using ADS-B and Meteorological data</em> (Ongoing)</li>
             </ul>
           </div>
           <div class="card">
-            <div><strong>Researcher</strong> — Quantum Communication Lab <span class="muted">(2019—present)</span></div>
+            <div><strong>Mentoring</strong></div>
             <ul>
-              <li>FSO testbeds, turbulence experiments</li>
-              <li>Swabian TimeTagger pipelines</li>
+              <li><strong>Mariana Dinis</strong> — Entangled photon pair source using a ppKTP crystal in a Sagnac Loop, 2024</li>
+              <li><strong>Carolina Realinho</strong> — Quantum Keyless communication under turbulence, 2024</li>
+              <li><strong>Ricardo Figueiredo Ferreira</strong> — High-Speed Free-Space Quantum Key Distribution, 2023</li>
+              <li><strong>Luis Barbosa</strong> — Mechanical design for satellite quantum communication, 2023</li>
+              <li><strong>Gonçalo Teixeira</strong> — Entangled Photon Pair Source for Free-Space Quantum Communication, 2022</li>
             </ul>
           </div>
         </div>
@@ -156,7 +191,10 @@
     </section>
 
     <!-- Publications -->
-    $1
+    <section id="page-publications" class="hidden">
+      <div class="card">
+        <h2>Publications</h2>
+        <div class="list" style="margin-top:12px">
           <details>
             <summary><strong>2025</strong> — Quantum Keyless Private Communication under intense background noise <span class="muted">(arXiv)</span></summary>
             <div class="muted">P. N. Mendes, D. Rusca, H. Zbinden, E. Z. Cruzeiro — <a href="https://arxiv.org/abs/2505.07940">Paper</a></div>
@@ -170,14 +208,16 @@
             <div class="muted">P. N. Mendes, G. L. Teixeira, D. Pinho, R. Rocha, P. André, M. Niehus, ... — <a href="https://epjqt.epj.org/articles/epjqt/abs/2024/01/40507_2024_Article_254/40507_2024_Article_254.html">Paper</a></div>
           </details>
           <details>
-            <summary><strong>2022</strong> — QuantSat‑PT: an attitude determination and control system architecture for QKD <span class="muted">(4th SEAC Conference)</span></summary>
+            <summary><strong>2022</strong> — QuantSat-PT: an attitude determination and control system architecture for QKD <span class="muted">(4th SEAC Conference)</span></summary>
             <div class="muted">J. Revés, I. Viveiros, R. Cunha, R. Rocha, J. P. Monteiro, A. Borralho, P. André, ... — <a href="https://upcommons.upc.edu/entities/publication/38b77041-6518-4693-8031-412678272237">Paper</a></div>
           </details>
           <details>
             <summary><strong>2020</strong> — Design of a passive photonic integrated circuit for QKD <span class="muted">(Master’s thesis)</span></summary>
             <div class="muted">P. R. N. Mendes — No public link available.</div>
           </details>
-        $2
+        </div>
+      </div>
+    </section>
 
     <!-- Personal -->
     <section id="page-personal" class="hidden">
@@ -185,7 +225,7 @@
         <h2>Personal</h2>
         <p class="muted">Currently on a research stay in Vigo; organizing a quantum comms reading group.</p>
         <h3 style="margin-top:12px">Interests</h3>
-        <div class="row" style="margin-top:6px; gap:8px">
+        <div class="row" style="margin-top:6px;gap:8px">
           <span class="pill">Teaching & outreach</span>
           <span class="pill">Building lab tools</span>
           <span class="pill">Photography</span>
@@ -196,58 +236,47 @@
   </main>
 
   <footer>
-    <div class="wrap">
-      © <span id="year"></span> Pedro Neto Mendes. Built with plain HTML/CSS/JS. Hosted on GitHub Pages.
-    </div>
+    <div class="wrap">© <span id="year"></span> Pedro Neto Mendes. Built with plain HTML/CSS/JS. Hosted on GitHub Pages.</div>
   </footer>
 
   <script>
-    // Simple tabs
-    const tabs = [
-      { id:'overview', label:'Overview' },
-      { id:'education', label:'Education & Research' },
-      { id:'teaching', label:'Teaching & Work Experience' },
-      { id:'publications', label:'Publications' },
-      { id:'personal', label:'Personal' },
+    // Tabs
+    const tabs=[
+      {id:'overview',label:'Overview'},
+      {id:'education',label:'Education'},
+      {id:'teaching',label:'Teaching & Work Experience'},
+      {id:'publications',label:'Publications'},
+      {id:'personal',label:'Personal'}
     ];
-    const tabsEl = document.getElementById('tabs');
-    const sections = tabs.map(t => document.getElementById('page-'+t.id));
-    let current = 'overview';
-
+    const tabsEl=document.getElementById('tabs');
+    const sections=tabs.map(t=>document.getElementById('page-'+t.id));
+    let current='overview';
     function renderTabs(){
-      tabsEl.innerHTML = '';
-      tabs.forEach(t => {
-        const b = document.createElement('button');
-        b.textContent = t.label;
-        b.className = ' ' + (t.id===current ? 'active':'');
-        b.addEventListener('click', () => selectTab(t.id));
+      tabsEl.innerHTML='';
+      tabs.forEach(t=>{
+        const b=document.createElement('button');
+        b.textContent=t.label;
+        if(t.id===current) b.classList.add('active');
+        b.classList.add('pill');
+        b.onclick=()=>selectTab(t.id);
         tabsEl.appendChild(b);
       });
-      // apply button classes after append
-      [...tabsEl.children].forEach(btn=>{
-        btn.classList.add('pill');
-        if(btn.textContent===tabs.find(x=>x.id===current).label){btn.classList.add('active');}
-      })
     }
     function selectTab(id){
-      current = id;
-      sections.forEach(s => s.classList.add('hidden'));
+      current=id;
+      sections.forEach(s=>s.classList.add('hidden'));
       document.getElementById('page-'+id).classList.remove('hidden');
       renderTabs();
-      window.scrollTo({top:0, behavior:'smooth'});
+      window.scrollTo({top:0,behavior:'smooth'});
     }
     renderTabs();
 
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Theme toggle: toggles a very slightly lighter background
-    const toggle = document.getElementById('themeToggle');
-    let alt = false;
-    toggle.addEventListener('click',()=>{
-      alt = !alt;
-      document.body.style.background = alt ? '#0d1016' : '#0b0c0f';
-    });
+    // Year + simple theme toggle
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.getElementById('themeToggle').onclick=()=>{
+      document.body.style.background =
+        document.body.style.background==='#0d1016' ? '#0b0c0f' : '#0d1016';
+    };
   </script>
 </body>
 </html>
