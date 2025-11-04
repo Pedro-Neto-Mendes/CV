@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pedro Mendes — Academic CV</title>
+  <meta name="description" content="PhD student website and academic CV for Pedro Mendes (Quantum Communication)." />
+  <link rel="icon" href="data:," />
+  <style>
+    :root{
+      --bg:#0b0c0f; /* dark background */
+      --panel:#0f1116; /* cards */
+      --text:#e7e9ee; /* main text */
+      --muted:#a6adbb; /* secondary text */
+      --line:#1b1f2a; /* borders */
+      --brand:#3b82f6; /* blue */
+      --brand-weak:#2563eb;
+      --chip:#111827;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; background:#0b0c0f; color:var(--text); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--text)}
+    .wrap{max-width:1000px; margin:auto; padding:0 16px}
+    header{position:sticky; top:0; backdrop-filter:saturate(140%) blur(6px); background:rgba(11,12,15,.7); border-bottom:1px solid var(--line); z-index:10}
+    header .top{display:flex; align-items:center; gap:12px; padding:14px 0}
+    .logo{width:36px; height:36px; border-radius:12px; background:linear-gradient(135deg,#6366f1,#06b6d4)}
+    .name{font-weight:700; font-size:14px}
+    .role{opacity:.7}
+    .bar{height:4px; background:var(--brand)} /* blue separator */
+    nav{display:flex; gap:8px; flex-wrap:wrap; padding:10px 0}
+    nav button{padding:8px 12px; border-radius:999px; border:1px solid var(--line); background:var(--chip); color:var(--text); cursor:pointer}
+    nav button.active{background:var(--brand); border-color:var(--brand); color:white}
+    main{padding:28px 0 40px}
+    .grid{display:grid; gap:24px}
+    @media(min-width:880px){.grid{grid-template-columns:0.35fr 0.65fr}}
+    .card{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:18px}
+    .circle{width:150px; height:150px; border-radius:999px; overflow:hidden; border:4px solid #0b0c0f; box-shadow:0 4px 20px rgba(0,0,0,.35)}
+    .muted{color:var(--muted)}
+    h1,h2,h3,h4{margin:0}
+    h2{font-size:22px; margin-bottom:12px}
+    h3{font-size:18px}
+    ul{margin:8px 0 0; padding-left:18px}
+    .list{display:grid; gap:12px}
+    .pill{display:inline-block; padding:4px 10px; border-radius:999px; border:1px solid var(--line); background:var(--chip); font-size:13px}
+    footer{border-top:1px solid var(--line); padding:26px 0; color:var(--muted); font-size:13px}
+    .links a{margin-right:10px; text-decoration:underline; text-underline-offset:3px}
+    .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+    .timeline{position:relative; border-left:1px solid var(--line); padding-left:18px}
+    .timeline .dot{position:absolute; left:-6px; width:10px; height:10px; background:var(--brand); border-radius:999px; margin-top:6px}
+    details{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:10px 12px}
+    details summary{cursor:pointer}
+    .hidden{display:none}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Pedro Mendes",
+    "jobTitle":"PhD Candidate • Quantum Communication",
+    "email":"pedro.mendes@example.com",
+    "url":"https://github.com/Peterhead29",
+    "sameAs":["https://scholar.google.com","https://orcid.org/0000-0000-0000-0000","https://www.linkedin.com/in/"],
+    "address":{"@type":"PostalAddress","addressLocality":"Vigo, Spain · Lisbon, Portugal"}
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <div class="logo" aria-hidden="true"></div>
+      <div class="name">Pedro Mendes <span class="role">— PhD Candidate • Quantum Communication</span></div>
+      <div style="flex:1"></div>
+      <button id="themeToggle" class="pill" aria-label="Toggle theme">Toggle theme</button>
+    </div>
+    <div class="bar"></div>
+    <nav class="wrap" id="tabs"></nav>
+  </header>
+
+  <main class="wrap">
+    <!-- Overview -->
+    <section id="page-overview">
+      <div class="grid">
+        <aside>
+          <div class="card" style="text-align:center">
+            <div class="circle" style="margin:0 auto 10px auto">
+              <img src="https://avatars.githubusercontent.com/u/9919?s=200" alt="Headshot of Pedro Mendes" style="width:100%;height:100%;object-fit:cover"/>
+            </div>
+            <div><strong>Pedro Mendes</strong></div>
+            <div class="muted">PhD Candidate • Quantum Communication</div>
+            <div class="links" style="margin-top:10px">
+              <a href="mailto:pedro.mendes@example.com">Email</a>
+              <a href="https://scholar.google.com">Scholar</a>
+              <a href="https://github.com/Peterhead29">GitHub</a>
+              <a href="https://www.linkedin.com/in/">LinkedIn</a>
+              <a href="./Pedro_Mendes_CV.pdf">Download CV</a>
+            </div>
+          </div>
+        </aside>
+        <section>
+          <div class="card">
+            <h2>About me</h2>
+            <p class="muted">Researching daylight‑resilient free‑space quantum links, QKPC/QSDC protocols, and photonic integrated systems. Based in Vigo and Lisbon; collaboration across photonics, information theory, and experimental quantum comms.</p>
+            <h3 style="margin-top:12px">Research interests</h3>
+            <div class="row" style="margin-top:6px; gap:8px">
+              <span class="pill">QKPC / QSDC</span>
+              <span class="pill">Free‑space optics & turbulence</span>
+              <span class="pill">Single‑photon timing</span>
+              <span class="pill">Photonic integrated circuits</span>
+              <span class="pill">Info‑theoretic security</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Education & Research -->
+    <section id="page-education" class="hidden">
+      <div class="card">
+        <h2>Education & Research</h2>
+        <div class="timeline" style="margin-top:12px">
+          <div class="dot" style="top:0"></div>
+          <div><strong>PhD in Physics (Quantum Communication)</strong> — IST & Instituto de Telecomunicações <span class="muted">(2023—present)</span>
+            <div class="muted">Private communication in daylight free‑space channels; QKPC/QSDC; PICs.</div>
+          </div>
+          <div class="dot" style="top:84px"></div>
+          <div style="margin-top:16px"><strong>MSc in Physics Engineering</strong> — Técnico Lisboa <span class="muted">(—)</span>
+            <div class="muted">Thesis on integrated photonic systems for quantum communication.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaching & Work Experience -->
+    <section id="page-teaching" class="hidden">
+      <div class="card">
+        <h2>Teaching & Work Experience</h2>
+        <div class="list" style="margin-top:12px">
+          <div class="card">
+            <div><strong>Lecturer</strong> — Universidade Lusófona <span class="muted">(2024—present)</span></div>
+            <ul>
+              <li>Intervenção por Aparatologia course</li>
+              <li>Laser–tissue interaction lab modules</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div><strong>Researcher</strong> — Quantum Communication Lab <span class="muted">(2019—present)</span></div>
+            <ul>
+              <li>FSO testbeds, turbulence experiments</li>
+              <li>Swabian TimeTagger pipelines</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="page-publications" class="hidden">
+      <div class="card">
+        <h2>Publications</h2>
+        <div class="list" style="margin-top:12px">
+          <details>
+            <summary><strong>2025</strong> — Daylight‑resilient QKPC over urban free‑space links <span class="muted">(arXiv)</span></summary>
+            <div class="muted">P. Mendes, et al. <a href="#">Paper</a></div>
+          </details>
+          <details>
+            <summary><strong>2024</strong> — CubeSat‑style payload for QKPC/QKD with polarization multiplexing <span class="muted">(Journal/Conf)</span></summary>
+            <div class="muted">P. Mendes, et al. <a href="#">Paper</a></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal -->
+    <section id="page-personal" class="hidden">
+      <div class="card">
+        <h2>Personal</h2>
+        <p class="muted">Currently on a research stay in Vigo; organizing a quantum comms reading group.</p>
+        <h3 style="margin-top:12px">Interests</h3>
+        <div class="row" style="margin-top:6px; gap:8px">
+          <span class="pill">Teaching & outreach</span>
+          <span class="pill">Building lab tools</span>
+          <span class="pill">Photography</span>
+          <span class="pill">Hiking</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="year"></span> Pedro Mendes. Built with plain HTML/CSS/JS. Hosted on GitHub Pages.
+    </div>
+  </footer>
+
+  <script>
+    // Simple tabs
+    const tabs = [
+      { id:'overview', label:'Overview' },
+      { id:'education', label:'Education & Research' },
+      { id:'teaching', label:'Teaching & Work Experience' },
+      { id:'publications', label:'Publications' },
+      { id:'personal', label:'Personal' },
+    ];
+    const tabsEl = document.getElementById('tabs');
+    const sections = tabs.map(t => document.getElementById('page-'+t.id));
+    let current = 'overview';
+
+    function renderTabs(){
+      tabsEl.innerHTML = '';
+      tabs.forEach(t => {
+        const b = document.createElement('button');
+        b.textContent = t.label;
+        b.className = ' ' + (t.id===current ? 'active':'');
+        b.addEventListener('click', () => selectTab(t.id));
+        tabsEl.appendChild(b);
+      });
+      // apply button classes after append
+      [...tabsEl.children].forEach(btn=>{
+        btn.classList.add('pill');
+        if(btn.textContent===tabs.find(x=>x.id===current).label){btn.classList.add('active');}
+      })
+    }
+    function selectTab(id){
+      current = id;
+      sections.forEach(s => s.classList.add('hidden'));
+      document.getElementById('page-'+id).classList.remove('hidden');
+      renderTabs();
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+    renderTabs();
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle: toggles a very slightly lighter background
+    const toggle = document.getElementById('themeToggle');
+    let alt = false;
+    toggle.addEventListener('click',()=>{
+      alt = !alt;
+      document.body.style.background = alt ? '#0d1016' : '#0b0c0f';
+    });
+  </script>
+</body>
+</html>
